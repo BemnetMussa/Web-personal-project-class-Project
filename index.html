@@ -3,62 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bemnet</h1>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="logo">Your Name</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
         </nav>
     </header>
-    <section class="hero">
-        <h2>Hi, I'm Bemnet!</h2>
-        <p>I'm a passionate web developer, problem solver, and AI enthusiast.</p>
-        <a href="#contact" class="btn">Let's Connect</a>
-    </section>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I specialize in full-stack development, AI projects, and solving complex algorithms.</p>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>JavaScript (React, Node.js, TypeScript)</li>
-            <li>Python (AI & ML)</li>
-            <li>Databases (MongoDB, PostgreSQL)</li>
-            <li>Problem Solving (LeetCode, DSA)</li>
-        </ul>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>AI Summarizer</h3>
-            <p>A tool that extracts and summarizes web pages using AI.</p>
-        </div>
-        <div class="project">
-            <h3>Booking.com Clone</h3>
-            <p>A full-stack clone of the popular travel booking site.</p>
-        </div>
-        <div class="project">
-            <h3>Money Tracker</h3>
-            <p>An app that tracks spending based on SMS notifications.</p>
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">yourgithub</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank">yourlinkedin</a></p>
-    </section>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Full-Stack Web & Mobile App Developer</p>
+        </section>
+        <!-- sections -->
+    </main>
+
     <footer>
-        <p>© 2025 Bemnet. All rights reserved.</p>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
