@@ -169,3 +169,37 @@ document.addEventListener('DOMContentLoaded', function() {
         </style>
     `);
 });
+
+
+
+
+const form = document.querySelector(".contact-form");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault(); // prevent page reload
+
+  const formData = new FormData(form);
+
+  fetch("php/contact.php", {
+    method: "POST",
+    body: formData
+  })
+  .then(response => response.text())
+  .then(data => {
+    console.log(data); // For debugging
+
+    // Show popup
+    const popup = document.getElementById("popup");
+    popup.style.display = "block";
+
+    // Hide popup after 3 seconds
+    setTimeout(() => {
+      popup.style.display = "none";
+      form.reset(); // Optional: clear the form
+    }, 3000);
+  })
+  .catch(error => {
+    alert("Something went wrong!");
+    console.error(error);
+  });
+});

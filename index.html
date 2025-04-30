@@ -381,7 +381,7 @@
                     </div>
                 </div>
                 <div class="contact-form-container">
-                    <form action="process_contact.php" method="POST" class="contact-form">
+                    <form action="php/contact.php" method="POST" class="contact-form">
                         <div class="form-group">
                             <label for="name">Your Name</label>
                             <input type="text" id="name" name="name" required>
@@ -404,6 +404,20 @@
             </div>
         </div>
     </section>
+
+    <!-- Popup -->
+        <div id="popup" style="
+            display: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            z-index: 1000;">
+        Thank you! Your message was sent.
+    </div>
 
     <footer>
         <div class="container">
